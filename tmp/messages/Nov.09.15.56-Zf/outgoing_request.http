@@ -1,0 +1,11 @@
+GET /asdsadasdasddddddddddddddddddddddd HTTP/1.0
+Host: github.com
+Connection: close
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.114 Safari/537.36
+Accept-Encoding: gzip,deflate
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+Cookie: logged_in=no; tz=Europe%2FLondon; _gh_sess=BAh7CDoPc2Vzc2lvbl9pZCIlY2U3YjliNTJkNDRmYWQ4NDE3NTZmNDc0MzJjYmQ3ZjM6EF9jc3JmX3Rva2VuSSIxSHd6WHUvQ2RTOVFhUDJhUEdHdHJ2Yk5DV0tWdDlvL3A2YXNCc2lldzhTWT0GOgZFRjoScmVmZXJyYWxfY29kZSIYaHR0cHM6Ly9naXRodWIuY29tLw%3D%3D--7f6b27b69b47006789c78ffe885540f79aec3625
+Via: 1.0 moovweb
+

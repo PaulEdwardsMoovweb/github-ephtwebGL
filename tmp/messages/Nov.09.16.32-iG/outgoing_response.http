@@ -1,0 +1,38 @@
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Sat, 09 Nov 2013 16:32:06 GMT
+Content-Type: text/html; charset=UTF-8
+Status: 200 OK
+Cache-Control: private, max-age=0, must-revalidate
+Strict-Transport-Security: max-age=2592000
+X-Frame-Options: deny
+Content-Security-Policy: default-src *; script-src 'self' https://github.global.ssl.fastly.net https://ssl.google-analytics.com https://collector-cdn.github.com https://analytics.githubapp.com https://embed.github.com https://raw.github.com; style-src 'self' 'unsafe-inline' https://github.global.ssl.fastly.net; object-src 'self' https://github.global.ssl.fastly.net
+X-Runtime: 4
+ETag: "44dcaa1621bc01ccd65e93d0ab693167"
+Set-Cookie: _gh_sess=BAh7CToPc2Vzc2lvbl9pZCIlY2U3YjliNTJkNDRmYWQ4NDE3NTZmNDc0MzJjYmQ3ZjM6EF9jc3JmX3Rva2VuSSIxSHd6WHUvQ2RTOVFhUDJhUEdHdHJ2Yk5DV0tWdDlvL3A2YXNCc2lldzhTWT0GOgZFRjoScmVmZXJyYWxfY29kZSIYaHR0cHM6Ly9naXRodWIuY29tL0kiCmZsYXNoBjsHRklDOidBY3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--50e510b6d6ced5dc79174480dd45c23b53fccb15; path=/; secure; HttpOnly; Domain=.github.com
+X-GitHub-Request-Id: 569DEFA1:3446:61A174:527E6386
+Connection: close
+Vary: Accept-Encoding
+Content-Length: 1122
+X-Q-S: 200000449000430000003
+X-M-V: 4.7.82
+X-S-V: local/github-epht 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="auth-form" id="login">
+
+    <form accept-charset="UTF-8" action="/session" method="post">
+<div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="HwzXu/CdS9QaP2aPGGtrvbNCWKVt9o/p6asBsiew8SY="></div>      <div class="auth-form-header">
+        <h1>Sign in</h1>
+      </div>
+      <div class="auth-form-body">
+        <label for="login_field">
+          Username or Email
+        </label>
+        <input autocapitalize="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text"><label for="password">
+          Password <a href="/sessions/forgot_password">(forgot password)</a>
+        </label>
+        <input class="input-block" id="password" name="password" tabindex="2" type="password"><input id="return_to" name="return_to" type="hidden" value="/asdasdasdasdasdasdadaadadadadaadadad"><input class="button" name="commit" tabindex="3" type="submit" value="Sign in">
+</div>
+</form>
+</div></body></html>

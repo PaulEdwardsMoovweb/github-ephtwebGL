@@ -1,0 +1,6 @@
+{
+	"host_map": [
+		"$.github.com => github.com",
+		"$.github.com => www.github.com"
+	]
+}

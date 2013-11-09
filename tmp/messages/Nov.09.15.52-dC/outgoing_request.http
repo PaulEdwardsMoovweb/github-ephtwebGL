@@ -1,0 +1,12 @@
+GET /sessions/login_404?return_to=/asdsadasdasddddddddddddddddddddddd HTTP/1.0
+Host: github.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0
+Accept: */*
+Accept-Language: en-gb,en;q=0.5
+Accept-Encoding: gzip,deflate
+X-Requested-With: XMLHttpRequest, XMLHttpRequest
+Referer: https://github.com/asdsadasdasddddddddddddddddddddddd
+Cookie: logged_in=no
+Connection: close
+Via: 1.0 moovweb
+

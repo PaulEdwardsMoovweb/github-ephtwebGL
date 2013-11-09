@@ -2,71 +2,46 @@
  * remix by Paul E.
  * based on:
  *
- *  http://www.html5rocks.com/en/tutorials/getusermedia/intro/
- *  https://github.com/jaysalvat/jquery.facedetection
- *
- * will only work on chrome unless i fix getUserMedia to be cross browser - modernizer?
+ *  https://github.com/auduno/headtrackr
  *
  *
  */
 
 var ranOnce = false;
-var localMediaStream;
-var canvas;
-var ctx;
-
-function hasGetUserMedia() {
-	return !!(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
-}
-
-var errorCallback = function(e) {
-	console.log('Reeeejected!', e);
-};
 
 $(document).ready(function() {
 	if ($('.mw_error').length > 0 && !ranOnce) {
 		ranOnce = true;
+		var videoInput = document.getElementById('inputVideo');
+		var canvasInput = document.getElementById('inputCanvas');
 
-		var video = document.querySelector('video');
-		var canvas = document.querySelector('canvas');
-		var ctx = canvas.getContext('2d');
-		var localMediaStream = null;
+		var htracker = new headtrackr.Tracker();
+		htracker.init(videoInput, canvasInput);
+		htracker.start();
 
-		function snapshot() {
-			if (localMediaStream) {
-				ctx.drawImage(video, 0, 0);
-				// "image/webp" works in Chrome.
-				// Other browsers will fall back to image/png.
-				//console.log(canvas.toDataURL('image/webp'));
-				$('canvas').width($('video').width());
-				$('canvas').height($('video').height());
-				
-				$('#test').attr("src", canvas.toDataURL('image/png'));
+		document.addEventListener("facetrackingEvent", function(e) {
+			
+			//drawIdent(canvasCtx, e.x, e.y);
+			//mouseX = e.x * 20;
+			//mouseY = -e.y * 20;
+			
+			
+// create a jQuery event
+myEvent = $.Event('mousemove');
 
-				$('#test').width($('canvas').width());
-				$('#test').height($('canvas').height());
+// set coordinates
+myEvent.pageX = e.x * 10 - 1000;
+myEvent.pageY = 0 - (e.y * 10) + 1500;
+console.log('face track event fired: ' + myEvent.pageX + ',' + myEvent.pageY);
+// trigger event - must trigger on document
+$(document).trigger(myEvent);
 
-				//now lets throw it through face detection
-				//$(function() {
-				var coords = $('#test1').faceDetection({
-					complete : function() {
-						console.log(coords);
-					}
-				});
-			}
-		}
+		}, false);
 
-		setInterval(function() {
-			snapshot();
-		}, 100)
-
-		// Not showing vendor prefixes or code that works cross-browser.
-		navigator.webkitGetUserMedia({
-			video : true
-		}, function(stream) {
-			video.src = window.URL.createObjectURL(stream);
-			localMediaStream = stream;
-		}, errorCallback);
+//		document.addEventListener("headtrackingEvent", function(e) {
+			//			mouseX = e.x * 20;
+			//			mouseY = -e.y * 20;
+	//	}, false);
 
 	}
 });

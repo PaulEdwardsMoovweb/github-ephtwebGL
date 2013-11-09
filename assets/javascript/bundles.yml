@@ -4,9 +4,7 @@
   :input_files:
   - host_map.js
   - main/jquery-1.5.1.min.js
-  - main/ccv.js
-  - main/face.js
-  - main/jquery.facedetection.js
+  - main/headtrackr.js
   - main/paulsHack.js
   - http://downloads.moovweb.com/uranium/0.1.104/uranium-pretty.js
   - http://downloads.moovweb.com/plutonium/0.1.73/gsub.js
